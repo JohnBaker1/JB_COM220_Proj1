@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:orientation="vertical"
+tools:context="johnbaker.johnbakerproj1.VRPC">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:gravity = "center_horizontal"
+    android:textSize="35sp"
+    android:background="#2196F3"
+    android:textColor="#FFFFFF"
+    android:text="Value Right Painting Co."/>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/house"
+    android:layout_height="0dp"
+   android:layout_weight="3" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context="com.udacity.myapplication.MainActivity">
+    <ImageView
+        android:src="@drawable/loc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/loc"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/loc"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src = "@drawable/phone"
+        android:id = "@+id/phone"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/loc"/>
+    <TextView
+        android:text="42 East Main Street, Miami, Florida 33101"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/loc"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/txtLoc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="(305)423-9820"
+        android:textSize="18sp"
+        android:layout_toRightOf = "@id/phone"
+        android:layout_below="@id/txtLoc"/>
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+
+    android:background="#76FF03"
+    >
+
+    <ImageView
+        android:src="@drawable/price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/price"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/price"
+        android:layout_marginLeft="8dp"
+        android:textColor = "#000000"
+
+        android:text="You name it, we'll paint it!  We have the lowest prices in Miami with over 1000 colors! Call today!"/>
+</RelativeLayout>
+</LinearLayout>
